@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Айкидоклуб "Кацу Хаяби"</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<nav>
+							<ul class="menu d-flex justify-content-center">
+								<li class="menu__item"><a href="#">О клубе</a></li>
+								<li class="menu__item"><a href="#">Айкидо для всех</a></li>
+								<li class="menu__item"><a href="#">Айкидо для детей</a></li>
+								<li class="menu__item"><a href="#">Новости</a></li>
+								<li class="menu__item"><a href="#">Газета "Айкидоша"</a></li>
+								<li class="menu__item"><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__main">
+			<div class="container">
+				<div class="row">
+					<div class="col-7 mr-auto">
+						<div id="scene" class="header__scene">
+							<div data-depth="0.50"><img src="img/left.png" class="header__img header__img_left animated fadeInLeft"></div>
+							<div data-depth="1.00"><img src="img/right-blur.png" class="header__img header__img_right animated fadeInRight"></div>
+							<div id="circle"></div>
+						</div>
+					</div>
+					<div class="col-5">
+						<div class="header__title">
+							<h1 class="animated fadeInRight">
+								Айкидоклуб
+							</h1>
+							<h2 class="animated fadeInUp">
+								"Кацу Хаяби"
+							</h2>
+							<h3 class="animated fadeInDown">
+								Федерация Айкидо Санкт-Петербурга и Ленинградской области
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<a href="#"><i class="arrow bounce fas fa-angle-double-down"></i></a>
+			</div>
+		</div>
+		
+	</header>
+
+
+
+
+
+
+				
+	<script src="js/scripts.min.js"></script>
+	<script>
+
+	function myAwesomeCallback() {
+	}
+
+	// the onReady function is called as soon as Parallax knows what input method to use. This might take up to 1000ms (supportDelay * 2) after initialisation
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene, {
+		onReady: myAwesomeCallback
+	});
+
+	</script>
+
+</body>
+</html>
