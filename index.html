@@ -29,12 +29,42 @@
 
 </head>
 <body>
+	<div id="page-preloader" class="preloader">
+		<span id="load_perc"><img class="header__gif" src="img/output.gif" alt=""></span>
+	</div>
+	<div class="page">
 	<header class="header">
+		<div class="sacura sacura__left" data-rellax-speed="-1">
+			<img src="img/sakura-left.png" class="animated fadeInLeft" alt="">
+		</div>
+		<div class="sacura sacura_2_left" data-rellax-speed="1">
+			<img src="img/sakura_2_left.png" class="animated fadeInLeft" alt="">
+		</div>
+		<div class="sacura sacura__right" data-rellax-speed="-1">
+			<img src="img/sakura-right.png" class="animated fadeInRight" alt="">
+		</div>
 		<div class="header__top">
+
+			<a href="#my-menu" class="hamburger hamburger--collapse">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</a>
+			<nav id="my-menu">
+				<ul>
+					<li class="menu__item"><a href="#">О клубе</a></li>
+					<li class="menu__item"><a href="#">Айкидо для всех</a></li>
+					<li class="menu__item"><a href="#">Айкидо для детей</a></li>
+					<li class="menu__item"><a href="#">Новости</a></li>
+					<li class="menu__item"><a href="#">Газета "Айкидоша"</a></li>
+					<li class="menu__item"><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<nav>
+						<nav id="navbar">
 							<ul class="menu d-flex justify-content-center">
 								<li class="menu__item"><a href="#">О клубе</a></li>
 								<li class="menu__item"><a href="#">Айкидо для всех</a></li>
@@ -44,6 +74,7 @@
 								<li class="menu__item"><a href="#">Контакты</a></li>
 							</ul>
 						</nav>
+
 					</div>
 				</div>
 			</div>
@@ -51,38 +82,335 @@
 		<div class="header__main">
 			<div class="container">
 				<div class="row">
-					<div class="col-7 mr-auto">
+					<div class="col-md-4 col-lg-6 d-flex align-items-center ml-auto mr-auto header__main-media">
+
 						<div id="scene" class="header__scene">
-							<div data-depth="0.50"><img src="img/left.png" class="header__img header__img_left animated fadeInLeft"></div>
-							<div data-depth="1.00"><img src="img/right-blur.png" class="header__img header__img_right animated fadeInRight"></div>
-							<div id="circle"></div>
+							<div data-depth="0.50">
+								<img src="img/left.png" id="header__img" class="header__img header__img_left animated">
+							</div>
+							<div data-depth="1.00">
+								<img src="img/right-blur.png" id="header__img-second" class="header__img header__img_right animated">
+							</div>
+							<div id="circle" class="circle animated"></div>
 						</div>
+
 					</div>
-					<div class="col-5">
+					<div class="col-lg-6">
+
 						<div class="header__title">
 							<h1 class="animated fadeInRight">
-								Айкидоклуб
+								Центр Боевых Искусств
 							</h1>
 							<h2 class="animated fadeInUp">
 								"Кацу Хаяби"
 							</h2>
 							<h3 class="animated fadeInDown">
-								Федерация Айкидо Санкт-Петербурга и Ленинградской области
+								Федерация Айкидо Санкт-Петербурга
 							</h3>
+							<div class="header__title_text d-flex justify-content-center">
+								<div class="header__title_items">
+									<a href="tel:9117968090" class="header__title_nomber">+7 (911) 796-80-90</a>
+									<p class="header__title_adress">(Левашовский пр.)</p>
+								</div>
+								<div class="header__title_items">
+									<a href="tel:9112865512" class="header__title_nomber">+7 (911) 286-55-12</a>
+									<p class="header__title_adress">(пр. Луначарского)</p>
+								</div>
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
-			<div class="row">
-				<a href="#"><i class="arrow bounce fas fa-angle-double-down"></i></a>
+			<div id="arrow" class="row justify-content-center">
+				<a href="#arrow"><i class="arrow bounce fas fa-angle-double-down"></i></a>
 			</div>
 		</div>
-		
 	</header>
 
+	<section class="slider animated">
+			<div class="sacura sacura__left" data-rellax-speed="4">
+				<img src="img/sakura_2_left_blur.png" class="sacura-img animated fadeInLeft" alt="">
+			</div>
+			<div class="sacura sacura__left_second" data-rellax-speed="1">
+				<img src="img/sakura_3_left_blur.png" class="sacura-img animated fadeInLeft" alt="">
+			</div>
+			<div class="sacura sacura__right" data-rellax-speed="1">
+				<img src="img/sakura-right-blur.png" class="sacura-img animated fadeInLeft" alt="">
+			</div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="slider__content">
+						<img src="img/test.png" alt="" class="slide__item">
+						<img src="img/test.png" alt="" class="slide__item">
+						<img src="img/test.png" alt="" class="slide__item">
+						<img src="img/test.png" alt="" class="slide__item">
+						<img src="img/test.png" alt="" class="slide__item">
+						<img src="img/test.png" alt="" class="slide__item">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<section id="main" class="main">
+		<div class="container">
+			<div class="row main__top_row animated">
+				<div class="col-sm-6 col-md">
+					<div class="main__item">
+						<a href="">
+							<img src="img/test.png" alt="">
+							<h2>Зоголовок</h2>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md">
+					<div class="main__item">
+						<a href="">
+							<img src="img/test.png" alt="">
+							<h2>Зоголовок</h2>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md">
+					<div class="main__item">
+						<a href="">
+							<img src="img/test.png" alt="">
+							<h2>Зоголовок</h2>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md">
+					<div class="main__item">
+						<a href="">
+							<img src="img/test.png" alt="">
+							<h2>Зоголовок</h2>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md">
+					<div class="main__item">
+						<a href="">
+							<img src="img/test.png" alt="">
+							<h2>Зоголовок</h2>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md">
+					<div class="main__item">
+						<a href="">
+							<img src="img/test.png" alt="">
+							<h2>Зоголовок</h2>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sacura sacura__right" data-rellax-speed="2">
+			<img src="img/sacura_2_right_blur.png" class="animated fadeInLeft" alt="">
+		</div>
+		<div class="sacura sacura__left" data-rellax-speed="-1">
+			<img src="img/sakura_3_left.png" class="animated fadeInLeft" alt="">
+		</div>
+	</section>
+
+	<section class="about animated">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md justify-content-center">
+					<div class="about__title">
+						<h1>О клубе</h1>
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+			<div class="w-100"></div>
+			<div class="row">
+				<div class="col-md-6 justify-content-center">
+					<div class="about__text">
+						<p>
+							Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Знаках встретил ему возвращайся осталось правилами наш, путь алфавит буквенных, ведущими пояс, страна, обеспечивает. Своих прямо ты за выйти одна необходимыми маленький, она рукопись свое!
+						</p>
+						<p>
+							Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Он подпоясал всемогущая жаренные на берегу составитель пояс несколько страну, жизни не над заголовок эта переписали агенство, рекламных продолжил грамматики сбить.
+						</p>
+					</div>
+				</div>
+				<div class="col-6 d-flex align-items-center">
+					<div class="about__text_right">
+						<img src="img/test.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="teachers animated">
+		<div class="sacura sacura__left" data-rellax-speed="2">
+			<img src="img/sakura_2_left_blur.png" class="animated fadeInLeft" alt="">
+		</div>
+		<div class="sacura sacura__right sacura__right" data-rellax-speed="-2">
+			<img src="img/sakura-right2-blur.png" class="animated fadeInLeft" alt="">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="teachers__title">
+						<h2>
+							Наши тренера
+						</h2>
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+			<div class="w-100"></div>
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					<a href="nikolay-aravin.html" class="teachers__item">
+						<img src="img/test.png" alt="">
+						<div class="teachers__item_text">
+							<h2>
+								Николай Алексеевич Аравин
+							</h2>
+							<p>
+								Технический директор и главный тренер-инструктор клуба
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="col d-flex justify-content-center">
+					<a href="vasiliy-kochetkov.html" class="teachers__item">
+						<img src="img/test.png" alt="">
+						<div class="teachers__item_text">
+							<h2>
+								Василий Николаевич Кочетков
+							</h2>
+							<p>
+								1 Дан Айкидо Айкикай
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="col d-flex justify-content-center">
+					<a href="ivan-aravin.html" class="teachers__item">
+						<img src="img/test.png" alt="">
+						<div class="teachers__item_text">
+							<h2>
+								Иван Николаевич Аравин
+							</h2>
+							<p>
+								1 Кю Айкидо Айкикай
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="col d-flex justify-content-center">
+					<a href="michal-melin.html" class="teachers__item">
+						<img src="img/test.png" alt="">
+						<div class="teachers__item_text">
+							<h2>
+								Михаил Львович Мелин
+							</h2>
+							<p>
+								1 Дан Айкидо Айкикай
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="place animated">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="place__title">
+						<h2>Выберите свой зал для тренировок</h2>
+						<div class="line"></div>
+					</div>
+				</div>
+			<div class="w-100"></div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="place__item">
+						<a href="levashovskiy.html" class="effect-4"><h2>Левашовский проспект</h2></a>
+						<iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3A438687e87cdefab6993b4777af94d3454867f612bae5cf71109c8090795ad2bc&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						<p>Левашовский пр., 11/7,</p>
+						<p>м.Чкаловская, м.Петроградская,</p>
+						<p>СК "Метрострой"</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="place__item">
+						<a href="lunacharskogo.html" class="effect-4"><h2>Проспект Луначарского</h2></a>
+						<iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3Ae267441e879ce14567141a26937055c6842a0b9f124b958b304f5c2c1df8a4bc&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						<p>пр.Луначарского,11,к.3,</p>
+						<p>м.Озерки, м.Пр.Просвещения,</p>
+						<p>"Центр боевых искусств" (вход со двора)</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="place__item">
+						<a href="agalatovo.html" class="effect-4"><h2>Агалатово</h2></a>
+						<iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3A772ef48490dd64831afa8ea53eb3da04c78aa4e1ae534e09845eeb43396ebeb1&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						<p>д.Агалатово, 162</p>
+						<p>Средняя общеобразовательная школа</p>
+						<p>тел. 8-921-792-74-71</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-xs-4 col-3 d-flex justify-content-start">
+					<div class="footer__right_items">
+						<img src="img/test.png" alt="">
+						<div class="footer__social">
+							<a href=""><i class="fab fa-vk"></i></a>
+							<a href=""><i class="fab fa-facebook-square"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-3 d-flex justify-content-end">
+					<div class="footer__right_items">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О клубе</a></li>
+							<li><a href="#">Айкидо для взрослых</a></li>
+							<li><a href="#">Айкидо для детей</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-4 col-3 d-flex justify-content-end">
+					<div class="footer__right_items">
+						<ul>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Газета "Айкидоша"</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-4 col-3 d-flex justify-content-end">
+					<div class="footer__right_items">
+						<ul>
+							<li><a href="tel:9112865512">+7 (911) 286-55-12</a></li>
+							<li><a href="tel:9117968090">+7 (911) 796-80-90</a></li>
+							<li>г. Санкт-Петербург</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
 
 
 
